@@ -194,3 +194,36 @@ button {
 button:hover {
   background-color: #6f2d17;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-texto h2 {
+    font-size: 28px;
+  }
+
+  .destaques {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

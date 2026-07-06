@@ -21,8 +21,11 @@ header {
   box-shadow: 0 4px 12px rgba(43, 33, 24, 0.2);
 }
 
-header h1 {
-  font-size: 24px;
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 nav {
@@ -58,29 +61,42 @@ p {
   margin-bottom: 15px;
 }
 
-.hero {
-  background-color: #e8d3bd;
-  padding: 70px 40px;
-  border-radius: 14px;
-  margin-bottom: 40px;
+.hero-home {
+  min-height: 520px;
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.65)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.12);
+  margin-bottom: 60px;
+  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
 }
 
-.hero-texto {
-  max-width: 700px;
-  text-align: center;
+.hero-conteudo {
+  max-width: 650px;
+  color: white;
 }
 
-.hero-texto h2 {
-  font-size: 38px;
+.hero-conteudo span {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
-.hero-texto p {
-  font-size: 18px;
+.hero-conteudo h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-conteudo p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .botao {
@@ -98,6 +114,60 @@ p {
 .botao:hover {
   background-color: #6f2d17;
   transform: translateY(-2px);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.intro-texto {
+  flex: 1;
+}
+
+.intro-imagem {
+  flex: 1;
+}
+
+.intro-imagem img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.15);
+}
+
+.galeria-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.galeria-home article {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(43, 33, 24, 0.12);
+  transition: 0.3s;
+}
+
+.galeria-home article:hover {
+  transform: translateY(-5px);
+}
+
+.galeria-home img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-home h3 {
+  color: #8b3a1e;
+  padding: 18px;
+  font-size: 20px;
 }
 
 .destaques {
@@ -260,16 +330,29 @@ footer p {
     padding: 25px;
   }
 
-  .hero {
-    padding: 45px 20px;
+  .hero-home {
+    min-height: 430px;
+    padding: 40px 25px;
   }
 
-  .hero-texto h2 {
-    font-size: 30px;
+  .hero-conteudo h1 {
+    font-size: 36px;
   }
 
-  .hero-texto p {
+  .hero-conteudo p {
     font-size: 16px;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-imagem img {
+    height: 240px;
+  }
+
+  .galeria-home {
+    grid-template-columns: 1fr;
   }
 
   .destaques {

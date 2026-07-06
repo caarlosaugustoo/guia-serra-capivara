@@ -51,6 +51,12 @@ section {
   margin-bottom: 50px;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
 h2 {
   color: #8b3a1e;
   margin-bottom: 15px;
@@ -79,7 +85,10 @@ p {
   color: white;
 }
 
-.hero-conteudo span {
+.hero-conteudo span,
+.topo-pagina span,
+.topo-contato span,
+.detalhe-hero span {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 6px 14px;
@@ -187,15 +196,6 @@ p {
   max-width: 700px;
 }
 
-.topo-pagina span {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 .topo-pagina h2 {
   color: white;
   font-size: 42px;
@@ -222,15 +222,6 @@ p {
 
 .topo-contato div {
   max-width: 700px;
-}
-
-.topo-contato span {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
 }
 
 .topo-contato h2 {
@@ -271,6 +262,12 @@ p {
   margin-top: 25px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .card {
   background-color: white;
   border-radius: 14px;
@@ -278,6 +275,7 @@ p {
   overflow: hidden;
   transition: 0.3s;
   box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  height: 100%;
 }
 
 .card img {
@@ -314,6 +312,104 @@ p {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 12px;
+}
+
+.saiba-mais {
+  display: inline-block;
+  color: #8b3a1e;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.detalhe-hero {
+  min-height: 430px;
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/pedra-furada.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
+}
+
+.detalhe-hero div {
+  max-width: 750px;
+}
+
+.detalhe-hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.detalhe-hero p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.detalhe-conteudo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.detalhe-texto {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+}
+
+.detalhe-info {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+}
+
+.detalhe-info h3 {
+  color: #8b3a1e;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.detalhe-info div {
+  border-bottom: 1px solid #e8d3bd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.detalhe-info div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.detalhe-info strong {
+  color: #2b2118;
+}
+
+.galeria-detalhe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.galeria-detalhe img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(43, 33, 24, 0.12);
+}
+
+.voltar {
+  text-align: center;
 }
 
 .contato {
@@ -461,6 +557,31 @@ footer p {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .detalhe-hero {
+    min-height: 360px;
+    padding: 40px 25px;
+  }
+
+  .detalhe-hero h1 {
+    font-size: 36px;
+  }
+
+  .detalhe-hero p {
+    font-size: 16px;
+  }
+
+  .detalhe-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-detalhe {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-detalhe img {
+    height: 230px;
   }
 
   h2 {

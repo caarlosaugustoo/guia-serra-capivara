@@ -323,7 +323,6 @@ p {
 
 .detalhe-hero {
   min-height: 430px;
-  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/pedra-furada.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -332,6 +331,30 @@ p {
   align-items: center;
   color: white;
   box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
+}
+
+.detalhe-parque {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/parque.jpg");
+}
+
+.detalhe-pedra {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/pedra-furada.jpg");
+}
+
+.detalhe-museu-homem {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/museu-homem.jpg");
+}
+
+.detalhe-museu-natureza {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/museu-natureza.jpg");
+}
+
+.detalhe-baixao {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/baixao.jpg");
+}
+
+.detalhe-trilhas {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.7)), url("../img/trilhas.jpg");
 }
 
 .detalhe-hero div {

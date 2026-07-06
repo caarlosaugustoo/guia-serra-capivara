@@ -141,3 +141,56 @@ footer {
   color: #8b3a1e;
   margin-bottom: 10px;
 }
+
+.contato {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #e0cfc0;
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #2b2118;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #c9b8a8;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background-color: #8b3a1e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6f2d17;
+}

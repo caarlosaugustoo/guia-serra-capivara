@@ -207,6 +207,43 @@ p {
   margin-bottom: 0;
 }
 
+.topo-contato {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.55), rgba(43, 33, 24, 0.65)), url("../img/parque2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  min-height: 300px;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
+}
+
+.topo-contato div {
+  max-width: 700px;
+}
+
+.topo-contato span {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.topo-contato h2 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.topo-contato p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
 .destaques {
   display: flex;
   gap: 20px;
@@ -402,6 +439,19 @@ footer p {
   }
 
   .topo-pagina p {
+    font-size: 16px;
+  }
+
+  .topo-contato {
+    min-height: 260px;
+    padding: 35px 25px;
+  }
+
+  .topo-contato h2 {
+    font-size: 32px;
+  }
+
+  .topo-contato p {
     font-size: 16px;
   }
 

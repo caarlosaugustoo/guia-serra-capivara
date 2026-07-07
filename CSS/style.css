@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   background: linear-gradient(180deg, #f8f1e8, #fffaf5);
   color: #2b2118;
   line-height: 1.6;
@@ -25,18 +27,18 @@ header {
   color: white;
   text-decoration: none;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -44,11 +46,13 @@ nav a:hover {
 }
 
 main {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 h1,
@@ -60,28 +64,30 @@ h3 {
 h2 {
   color: #8b3a1e;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 p {
   margin-bottom: 15px;
+  color: #4b3b31;
 }
 
 .hero-home {
   min-height: 520px;
-  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.65)), url("../img/hero.jpg");
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.68)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 16px;
-  padding: 60px 40px;
+  border-radius: 22px;
+  padding: 60px 45px;
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
+  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
 }
 
 .hero-conteudo {
-  max-width: 650px;
+  max-width: 700px;
   color: white;
 }
 
@@ -90,22 +96,24 @@ p {
 .topo-contato span,
 .detalhe-hero span {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 14px;
+  background-color: rgba(255, 255, 255, 0.22);
+  color: white;
+  padding: 7px 15px;
   border-radius: 20px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
 .hero-conteudo h1 {
-  font-size: 52px;
-  line-height: 1.1;
-  margin-bottom: 20px;
+  font-size: 54px;
+  margin-bottom: 18px;
+  font-weight: 800;
 }
 
 .hero-conteudo p {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 19px;
+  color: #fff5ed;
+  margin-bottom: 18px;
 }
 
 .botao {
@@ -113,10 +121,11 @@ p {
   background-color: #8b3a1e;
   color: white;
   text-decoration: none;
-  padding: 12px 22px;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 25px;
+  font-weight: 700;
   margin-top: 10px;
+  margin-right: 10px;
   transition: 0.3s;
 }
 
@@ -125,10 +134,32 @@ p {
   transform: translateY(-2px);
 }
 
+.botao-secundario {
+  display: inline-block;
+  background-color: white;
+  color: #8b3a1e;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.botao-secundario:hover {
+  background-color: #f8f1e8;
+  transform: translateY(-2px);
+}
+
 .intro {
   display: flex;
   align-items: center;
   gap: 35px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.12);
 }
 
 .intro-texto {
@@ -143,123 +174,37 @@ p {
   width: 100%;
   height: 320px;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.15);
-}
-
-.galeria-home {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 25px;
-}
-
-.galeria-home article {
-  background-color: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(43, 33, 24, 0.12);
-  transition: 0.3s;
-}
-
-.galeria-home article:hover {
-  transform: translateY(-5px);
-}
-
-.galeria-home img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+  border-radius: 18px;
   display: block;
-}
-
-.galeria-home h3 {
-  color: #8b3a1e;
-  padding: 18px;
-  font-size: 20px;
-}
-
-.topo-pagina {
-  background-image: linear-gradient(rgba(43, 33, 24, 0.55), rgba(43, 33, 24, 0.65)), url("../img/parque2.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  min-height: 300px;
-  padding: 50px 40px;
-  display: flex;
-  align-items: center;
-  color: white;
-  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
-}
-
-.topo-pagina div {
-  max-width: 700px;
-}
-
-.topo-pagina h2 {
-  color: white;
-  font-size: 42px;
-  margin-bottom: 15px;
-}
-
-.topo-pagina p {
-  font-size: 18px;
-  margin-bottom: 0;
-}
-
-.topo-contato {
-  background-image: linear-gradient(rgba(43, 33, 24, 0.55), rgba(43, 33, 24, 0.65)), url("../img/parque2.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  min-height: 300px;
-  padding: 50px 40px;
-  display: flex;
-  align-items: center;
-  color: white;
-  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
-}
-
-.topo-contato div {
-  max-width: 700px;
-}
-
-.topo-contato h2 {
-  color: white;
-  font-size: 42px;
-  margin-bottom: 15px;
-}
-
-.topo-contato p {
-  font-size: 18px;
-  margin-bottom: 0;
 }
 
 .destaques {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   margin-top: 25px;
 }
 
 .destaque {
   background-color: white;
-  padding: 22px;
-  border-radius: 12px;
+  padding: 24px;
+  border-radius: 18px;
   border: 1px solid #e0cfc0;
   flex: 1;
-  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
 }
 
 .destaque h3 {
   color: #8b3a1e;
   margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 25px;
+  gap: 26px;
+  margin-top: 28px;
 }
 
 .card-link {
@@ -270,67 +215,103 @@ p {
 
 .card {
   background-color: white;
-  border-radius: 14px;
+  border-radius: 20px;
   border: 1px solid #e0cfc0;
   overflow: hidden;
   transition: 0.3s;
-  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
   height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(43, 33, 24, 0.17);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 210px;
   object-fit: cover;
   display: block;
 }
 
 .card-conteudo {
-  padding: 20px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(43, 33, 24, 0.15);
+  padding: 22px;
 }
 
 .card h3 {
   color: #8b3a1e;
   margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .card p {
-  color: #3a2c23;
+  color: #4b3b31;
 }
 
 .tag {
   display: inline-block;
   background-color: #e8d3bd;
   color: #8b3a1e;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 700;
   margin-bottom: 12px;
 }
 
 .saiba-mais {
   display: inline-block;
   color: #8b3a1e;
-  font-weight: bold;
+  font-weight: 800;
   margin-top: 8px;
+}
+
+.topo-pagina,
+.topo-contato {
+  background-image: linear-gradient(rgba(43, 33, 24, 0.5), rgba(43, 33, 24, 0.7)), url("../img/parque2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 22px;
+  min-height: 320px;
+  padding: 55px 45px;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
+}
+
+.topo-pagina div,
+.topo-contato div {
+  max-width: 720px;
+}
+
+.topo-pagina h2,
+.topo-contato h2 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.topo-pagina p,
+.topo-contato p {
+  font-size: 18px;
+  color: #fff5ed;
+  margin-bottom: 0;
 }
 
 .detalhe-hero {
   min-height: 430px;
   background-size: cover;
   background-position: center;
-  border-radius: 16px;
-  padding: 60px 40px;
+  border-radius: 22px;
+  padding: 60px 45px;
   display: flex;
   align-items: center;
   color: white;
-  box-shadow: 0 8px 25px rgba(43, 33, 24, 0.2);
+  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
 }
 
 .detalhe-parque {
@@ -358,16 +339,18 @@ p {
 }
 
 .detalhe-hero div {
-  max-width: 750px;
+  max-width: 780px;
 }
 
 .detalhe-hero h1 {
-  font-size: 52px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 18px;
+  font-weight: 800;
 }
 
 .detalhe-hero p {
-  font-size: 20px;
+  font-size: 19px;
+  color: #fff5ed;
   margin-bottom: 0;
 }
 
@@ -381,23 +364,24 @@ p {
 .detalhe-texto {
   background-color: white;
   padding: 30px;
-  border-radius: 16px;
+  border-radius: 20px;
   border: 1px solid #e0cfc0;
-  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
 }
 
 .detalhe-info {
-  background-color: #fff;
+  background-color: white;
   padding: 25px;
-  border-radius: 16px;
+  border-radius: 20px;
   border: 1px solid #e0cfc0;
-  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
 }
 
 .detalhe-info h3 {
   color: #8b3a1e;
   margin-bottom: 18px;
   font-size: 24px;
+  font-weight: 800;
 }
 
 .detalhe-info div {
@@ -427,44 +411,54 @@ p {
   width: 100%;
   height: 240px;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 5px 15px rgba(43, 33, 24, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.12);
 }
 
 .voltar {
   text-align: center;
+  background-color: white;
+  padding: 35px 25px;
+  border-radius: 20px;
+  border: 1px solid #e0cfc0;
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
+}
+
+.voltar p {
+  max-width: 700px;
+  margin: 0 auto 15px;
 }
 
 .contato {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 form {
   background-color: white;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 20px;
   border: 1px solid #e0cfc0;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 4px 12px rgba(43, 33, 24, 0.08);
+  gap: 11px;
+  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.1);
 }
 
 label {
-  font-weight: bold;
+  font-weight: 700;
   color: #2b2118;
 }
 
 input,
 select,
 textarea {
-  padding: 12px;
+  padding: 13px;
   border: 1px solid #c9b8a8;
-  border-radius: 8px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 input:focus,
@@ -472,10 +466,11 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: #8b3a1e;
+  box-shadow: 0 0 0 3px rgba(139, 58, 30, 0.12);
 }
 
 textarea {
-  min-height: 120px;
+  min-height: 130px;
   resize: vertical;
 }
 
@@ -483,10 +478,11 @@ button {
   background-color: #8b3a1e;
   color: white;
   border: none;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 13px;
+  border-radius: 25px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
+  font-family: 'Montserrat', Arial, sans-serif;
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s;
@@ -494,17 +490,20 @@ button {
 
 button:hover {
   background-color: #6f2d17;
+  transform: translateY(-2px);
 }
 
 footer {
   background-color: #2b2118;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
 }
 
 footer p {
   margin-bottom: 0;
+  color: #fff5ed;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -512,6 +511,11 @@ footer p {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 22px;
   }
 
   nav {
@@ -523,9 +527,14 @@ footer p {
     padding: 25px;
   }
 
+  section {
+    margin-bottom: 45px;
+  }
+
   .hero-home {
     min-height: 430px;
     padding: 40px 25px;
+    border-radius: 18px;
   }
 
   .hero-conteudo h1 {
@@ -536,42 +545,20 @@ footer p {
     font-size: 16px;
   }
 
+  .botao,
+  .botao-secundario {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
   .intro {
     flex-direction: column;
+    padding: 24px;
   }
 
   .intro-imagem img {
     height: 240px;
-  }
-
-  .galeria-home {
-    grid-template-columns: 1fr;
-  }
-
-  .topo-pagina {
-    min-height: 260px;
-    padding: 35px 25px;
-  }
-
-  .topo-pagina h2 {
-    font-size: 32px;
-  }
-
-  .topo-pagina p {
-    font-size: 16px;
-  }
-
-  .topo-contato {
-    min-height: 260px;
-    padding: 35px 25px;
-  }
-
-  .topo-contato h2 {
-    font-size: 32px;
-  }
-
-  .topo-contato p {
-    font-size: 16px;
   }
 
   .destaques {
@@ -582,13 +569,35 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .card img {
+    height: 210px;
+  }
+
+  .topo-pagina,
+  .topo-contato {
+    min-height: 260px;
+    padding: 35px 25px;
+    border-radius: 18px;
+  }
+
+  .topo-pagina h2,
+  .topo-contato h2 {
+    font-size: 32px;
+  }
+
+  .topo-pagina p,
+  .topo-contato p {
+    font-size: 16px;
+  }
+
   .detalhe-hero {
-    min-height: 360px;
+    min-height: 350px;
     padding: 40px 25px;
+    border-radius: 18px;
   }
 
   .detalhe-hero h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .detalhe-hero p {
@@ -599,6 +608,11 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .detalhe-texto,
+  .detalhe-info {
+    padding: 24px;
+  }
+
   .galeria-detalhe {
     grid-template-columns: 1fr;
   }
@@ -607,7 +621,15 @@ footer p {
     height: 230px;
   }
 
+  .voltar {
+    padding: 30px 20px;
+  }
+
+  form {
+    padding: 24px;
+  }
+
   h2 {
-    font-size: 26px;
+    font-size: 27px;
   }
 }

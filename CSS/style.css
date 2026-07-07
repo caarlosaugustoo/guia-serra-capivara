@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
-  background: linear-gradient(180deg, #f8f1e8, #fffaf5);
+  background: #fffaf5;
   color: #2b2118;
   line-height: 1.6;
 }
@@ -16,7 +16,7 @@ body {
 header {
   background-color: #8b3a1e;
   color: white;
-  padding: 20px 40px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,13 +46,12 @@ nav a:hover {
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
+  width: 100%;
 }
 
-section {
-  margin-bottom: 55px;
+main > section {
+  width: min(1150px, calc(100% - 48px));
+  margin: 0 auto 70px;
 }
 
 h1,
@@ -64,7 +63,7 @@ h3 {
 h2 {
   color: #8b3a1e;
   margin-bottom: 15px;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
 }
 
@@ -74,27 +73,27 @@ p {
 }
 
 .hero-home {
-  min-height: 520px;
-  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.68)), url("../img/hero.jpg");
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  background-image: linear-gradient(rgba(43, 33, 24, 0.45), rgba(43, 33, 24, 0.72)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 22px;
-  padding: 60px 45px;
+  padding: 90px 8%;
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
-  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
+  margin-bottom: 0;
 }
 
 .hero-conteudo {
-  max-width: 700px;
+  max-width: 760px;
   color: white;
 }
 
 .hero-conteudo span,
 .topo-pagina span,
 .topo-contato span,
-.detalhe-hero span {
+.detalhe-hero span,
+.bloco-home-texto span {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.22);
   color: white;
@@ -105,13 +104,13 @@ p {
 }
 
 .hero-conteudo h1 {
-  font-size: 54px;
+  font-size: 64px;
   margin-bottom: 18px;
   font-weight: 800;
 }
 
 .hero-conteudo p {
-  font-size: 19px;
+  font-size: 20px;
   color: #fff5ed;
   margin-bottom: 18px;
 }
@@ -121,7 +120,7 @@ p {
   background-color: #8b3a1e;
   color: white;
   text-decoration: none;
-  padding: 13px 22px;
+  padding: 13px 24px;
   border-radius: 25px;
   font-weight: 700;
   margin-top: 10px;
@@ -139,7 +138,7 @@ p {
   background-color: white;
   color: #8b3a1e;
   text-decoration: none;
-  padding: 13px 22px;
+  padding: 13px 24px;
   border-radius: 25px;
   font-weight: 700;
   margin-top: 10px;
@@ -152,18 +151,21 @@ p {
 }
 
 .intro {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 35px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid #e0cfc0;
-  box-shadow: 0 6px 18px rgba(43, 33, 24, 0.12);
+  gap: 60px;
+  background-color: #fffaf5;
+  padding: 80px 8%;
+  margin-bottom: 0;
 }
 
 .intro-texto {
   flex: 1;
+}
+
+.intro-texto p {
+  font-size: 17px;
 }
 
 .intro-imagem {
@@ -172,10 +174,86 @@ p {
 
 .intro-imagem img {
   width: 100%;
-  height: 320px;
+  height: 420px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 22px;
   display: block;
+  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.18);
+}
+
+.secoes-home {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.bloco-home {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+  min-height: 500px;
+}
+
+.bloco-home.invertido {
+  flex-direction: row-reverse;
+  background-color: #f8f1e8;
+}
+
+.bloco-home-img {
+  flex: 1;
+}
+
+.bloco-home-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.bloco-home-texto {
+  flex: 1;
+  padding: 80px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloco-home-texto span {
+  background-color: #e8d3bd;
+  color: #8b3a1e;
+  width: fit-content;
+}
+
+.bloco-home-texto h2 {
+  font-size: 40px;
+}
+
+.bloco-home-texto p {
+  font-size: 17px;
+}
+
+.faixa-final {
+  width: 100%;
+  background-image: linear-gradient(rgba(43, 33, 24, 0.55), rgba(43, 33, 24, 0.75)), url("../img/parque2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 90px 8%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.faixa-final h2 {
+  color: white;
+  font-size: 42px;
+}
+
+.faixa-final p {
+  color: #fff5ed;
+  max-width: 750px;
+  margin: 0 auto 15px;
+  font-size: 18px;
 }
 
 .destaques {
@@ -270,16 +348,16 @@ p {
 
 .topo-pagina,
 .topo-contato {
+  width: 100%;
   background-image: linear-gradient(rgba(43, 33, 24, 0.5), rgba(43, 33, 24, 0.7)), url("../img/parque2.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 22px;
-  min-height: 320px;
-  padding: 55px 45px;
+  min-height: 360px;
+  padding: 75px 8%;
   display: flex;
   align-items: center;
   color: white;
-  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
+  margin-bottom: 70px;
 }
 
 .topo-pagina div,
@@ -290,7 +368,7 @@ p {
 .topo-pagina h2,
 .topo-contato h2 {
   color: white;
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 15px;
   font-weight: 800;
 }
@@ -303,15 +381,15 @@ p {
 }
 
 .detalhe-hero {
-  min-height: 430px;
+  width: 100%;
+  min-height: 480px;
   background-size: cover;
   background-position: center;
-  border-radius: 22px;
-  padding: 60px 45px;
+  padding: 80px 8%;
   display: flex;
   align-items: center;
   color: white;
-  box-shadow: 0 10px 28px rgba(43, 33, 24, 0.22);
+  margin-bottom: 70px;
 }
 
 .detalhe-parque {
@@ -343,7 +421,7 @@ p {
 }
 
 .detalhe-hero h1 {
-  font-size: 50px;
+  font-size: 54px;
   margin-bottom: 18px;
   font-weight: 800;
 }
@@ -431,7 +509,7 @@ p {
 
 .contato {
   max-width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
 }
 
 form {
@@ -523,22 +601,18 @@ footer p {
     gap: 10px;
   }
 
-  main {
-    padding: 25px;
-  }
-
-  section {
+  main > section {
+    width: calc(100% - 32px);
     margin-bottom: 45px;
   }
 
   .hero-home {
     min-height: 430px;
-    padding: 40px 25px;
-    border-radius: 18px;
+    padding: 45px 24px;
   }
 
   .hero-conteudo h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .hero-conteudo p {
@@ -554,11 +628,36 @@ footer p {
 
   .intro {
     flex-direction: column;
-    padding: 24px;
+    padding: 50px 24px;
   }
 
   .intro-imagem img {
     height: 240px;
+  }
+
+  .bloco-home,
+  .bloco-home.invertido {
+    flex-direction: column;
+  }
+
+  .bloco-home-img img {
+    min-height: 260px;
+  }
+
+  .bloco-home-texto {
+    padding: 40px 24px;
+  }
+
+  .bloco-home-texto h2 {
+    font-size: 30px;
+  }
+
+  .faixa-final {
+    padding: 60px 24px;
+  }
+
+  .faixa-final h2 {
+    font-size: 30px;
   }
 
   .destaques {
@@ -575,9 +674,8 @@ footer p {
 
   .topo-pagina,
   .topo-contato {
-    min-height: 260px;
-    padding: 35px 25px;
-    border-radius: 18px;
+    min-height: 280px;
+    padding: 45px 24px;
   }
 
   .topo-pagina h2,
@@ -592,8 +690,7 @@ footer p {
 
   .detalhe-hero {
     min-height: 350px;
-    padding: 40px 25px;
-    border-radius: 18px;
+    padding: 45px 24px;
   }
 
   .detalhe-hero h1 {
@@ -630,6 +727,6 @@ footer p {
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 28px;
   }
 }
